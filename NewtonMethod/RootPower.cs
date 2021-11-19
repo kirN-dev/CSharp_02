@@ -13,7 +13,7 @@ namespace RootPower
 
 			if (accuracy > .11f)
 			{
-				throw new ArgumentOutOfRangeException("Accuracy must be less than 0.11");
+				throw new ArgumentOutOfRangeException(nameof(accuracy), "Accuracy must be less than 0.11");
 			}
 
 			double past = n + 1;
